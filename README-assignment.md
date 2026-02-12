@@ -20,3 +20,6 @@ This project identifies a 7.2% revenue leak ($88.8K) caused by logistics bottlen
 ## 💡 Strategic Recommendations
 - **Logistics:** Shift high-value orders (>$1,800) to Federal Shipping to reduce lead time by 4 days.
 - **Pricing:** Cap Meat/Poultry discounts at 5.5% to recover $45K in lost margin.
+
+Google Drive folder:
+[https://drive.google.com/drive/folders/1CFXFY58VXuMOi2tlM_00CS3he5MqFbCS?usp=sharing](url)
