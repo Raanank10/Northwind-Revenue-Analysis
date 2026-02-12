@@ -22,4 +22,4 @@ This project identifies a 7.2% revenue leak ($88.8K) caused by logistics bottlen
 - **Pricing:** Cap Meat/Poultry discounts at 5.5% to recover $45K in lost margin.
 
 Google Drive folder:
-[📁 View Project Assets (PowerPoint & Word Logs)](https://drive.google.com/drive/folders/1CFXFY58VXuMOi2tlM_00CS3he5MqFbCS?usp=sharing)
+[📁 View Project Assets (PowerPoint & Tableau files & Word Logs)](https://drive.google.com/drive/folders/1CFXFY58VXuMOi2tlM_00CS3he5MqFbCS?usp=sharing)
