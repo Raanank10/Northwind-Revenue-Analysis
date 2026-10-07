@@ -1,3 +1,9 @@
+/*
+  Cost assumption: Northwind has no supplier-cost column. Per the project brief,
+  [Products].UnitPrice is used as a PROXY for wholesale cost and [Order Details].UnitPrice
+  as the selling price. "Gross profit" below is therefore an estimate, valid only for
+  comparing categories/products with each other, not as an absolute margin.
+*/
 SELECT c.CategoryName,
     -- Total value if everything was sold at full price
     ROUND(SUM(od.UnitPrice * od.Quantity), 2) AS Potential_Revenue,
@@ -5,7 +11,7 @@ SELECT c.CategoryName,
     ROUND(SUM(od.UnitPrice * od.Quantity * od.Discount), 2) AS Total_Discount_Value, 
     -- The actual money that hit the bank
     ROUND(SUM(od.UnitPrice * od.Quantity * (1 - od.Discount)), 2) AS Actual_Revenue, 
-    -- Estimated Profit (Actual Revenue minus Wholesale Cost)
+    -- Estimated Profit (Actual Revenue minus cost proxy, see note above)
     ROUND(SUM((od.UnitPrice * od.Quantity * (1 - od.Discount)) - (p.UnitPrice * od.Quantity)), 2) AS Estimated_Gross_Profit, 
     -- Average Discount Rate per Category
     ROUND(AVG(od.Discount) * 100, 2) AS Avg_Discount_Percent
