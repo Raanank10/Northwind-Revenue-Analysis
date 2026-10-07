@@ -4,8 +4,6 @@
 
 This is an end-to-end analysis of the classic Northwind database: 830 orders and $1.27M in net revenue from July 1996 to May 1998. It covers pricing, fulfillment, customers and sales staff, and ends with recommendations for the board.
 
-![Northwind dashboard](Visualizations/Northwind%20Data%20Analysis%20Project%20Dashboard.png)
-
 ## Key findings
 
 | # | Finding | Evidence |
@@ -33,6 +31,12 @@ This is an end-to-end analysis of the classic Northwind database: 830 orders and
 - "Recovered revenue" scenarios assume no change in volume.
 - Quarterly comparisons need to account for the partial final quarter (1998-Q2).
 - Lead time is measured from order date to shipped date. The 21 unshipped orders are excluded.
+
+## Dashboard (v1, rebuild in progress)
+
+> This Tableau dashboard predates the order-grain fix in the SQL. Its order counts are line-item counts, and its "at-risk revenue" header is superseded by the findings above. An updated version is in progress.
+
+![Northwind dashboard v1](Visualizations/Northwind%20Data%20Analysis%20Project%20Dashboard.png)
 
 ## Repository structure
 
