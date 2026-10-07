@@ -1,3 +1,9 @@
+/*
+  Cost assumption: Northwind has no supplier-cost column. Per the project brief,
+  [Products].UnitPrice is used as a PROXY for wholesale cost and [Order Details].UnitPrice
+  as the selling price. "Gross profit" below is therefore an estimate, valid only for
+  comparing categories/products with each other, not as an absolute margin.
+*/
 SELECT TOP 10
     p.ProductName,
     c.CategoryName,
